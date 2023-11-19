@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book Shelf</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <p id="logo" align="center">Book Shelf</p>
+    </header>
+    <main class="app">
+      <div class="container">
+        <h2 class="title">Tambahkan Buku</h2>
+        <div class="content">
+          <form id="add-book">
+            <label for="title">Judul</label>
+            <input type="text" name="title" id="title" required placeholder="Masukkan Judul" />
+            <label for="author">Penulis</label>
+            <input type="text" name="author" id="author" required placeholder="Masukkan Penulis" />
+            <label for="year">Tahun</label>
+            <input type="number" maxlength="4" name="year" id="year" required placeholder="YYYY" />
+            <button type="submit">Tambahkan Buku</button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="title">Cari Judul Buku</h2>
+        <div class="content">
+          <input type="text" maxlength="50" id="search-input" placeholder="Masukkan judul" />
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="title">Belum Selesai Baca</h2>
+        <div class="content" id="incompleted-books-list"></div>
+      </div>
+      <div class="container completed-books">
+        <h2 class="title">Selesai Baca</h2>
+        <div class="content" id="completed-books-list"></div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>
