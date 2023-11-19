@@ -1,0 +1,142 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+
+  margin: 0;
+  padding: 0;
+
+}
+
+h2,
+h3 {
+  color: #00a2c6;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 18px;
+
+  font-weight: 400;
+  text-decoration: none;
+
+  color:white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-images {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+
+
+.card, article {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  padding:20px
+}
+
+
+.jumbotron {
+  font-size: 20px;
+  background-color: #00c8eb;
+  color: white;
+  padding: 60px;
+  text-align: center;
+  margin-bottom: 0;
+  border-radius: 5px 5px 0 0;
+
+}
+
+nav ul{
+  display: flex;
+  padding-inline: 4rem;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+nav {
+  background-color: #00a2c6;
+  padding: 5px;
+  margin-top: 0;
+  border-radius: 0 0 5px 5px  ;
+
+  position: sticky;
+  top:0;
+}
+
+main{
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+
+aside{
+  flex:1;
+}
+
+#content{
+
+  flex:5;
+  display:flex;
+  flex-flow: column nowrap;
+  gap:1.8rem;
+}
+*{
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px){
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside{
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px){
+  main aside{
+    align-self: stretch;
+  }
+  nav ul {
+    justify-content: center;
+
+  }
+}
+
+header{
+  display: inline;
+}
+
+
+
+
+
+
+
+
+
